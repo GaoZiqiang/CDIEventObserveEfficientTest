@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<title>welcome to weld event demo</title>
+	<!-- css style partly from: http://www.coreservlets.com/JSF-Tutorial/jsf2 -->
+	<style>
+#header {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 5px;
+}
+
+#nav {
+	line-height: 30px;
+	background-color: #eeeeee;
+	height: 300px;
+	width: 100px;
+	float: left;
+	padding: 5px;
+}
+
+#section {
+	width: 350px;
+	float: left;
+	padding: 10px;
+}
+
+#footer {
+	background-color: black;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+}
+</style>
+
+</h:head>
+<h:body>
+
+	<div id="header">
+		<h1>房间预定表</h1>
+	</div>
+	<ul id="nav">
+		<li><a href="">首页</a></li>
+		<li><a href="">用户登录</a></li>
+		<li><a href="">房间查询</a></li>
+		<li><a href="">关于我们</a></li>
+
+	</ul>
+	<div id="section">
+		<h:form>
+			
+			<fieldset>
+				<legend>增加房间</legend>
+					<f:facet name="header">操作</f:facet>
+					<h:commandButton value="点击入住"
+						action="" />
+					<h:commandButton value="删除房间"
+						action="" />
+				
+			</fieldset>
+
+		</h:form>
+	</div>
+	<div id="footer">copyright@ softlab.com</div>
+</h:body>
+</html>
